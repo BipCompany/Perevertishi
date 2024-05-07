@@ -1,4 +1,4 @@
-import { createboard } from 'scripts/createboard.js'
+import { createBoard } from 'scripts/createboard.js'
 
 const startButton = document.querySelector('.first_button')
 
@@ -13,5 +13,5 @@ startButton.addEventListener('click', event => {
 		alert('Нужно выбрать чётное число.')
 		return
 	}
-	createboard(count, columns)
+	createBoard(count, columns)
 })
