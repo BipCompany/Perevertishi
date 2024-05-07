@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Перевёртыши</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="site_icon.png" type="image/png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<div class="content">
+			<main class="main">
+				<div class="stats">
+					<h1>Пары</h1>
+					<p class="steps">Шаги: 0 шагов</p>
+					<p class="timestats">Время: 60 сек</p>
+				</div>
+				<h2>Настроить количество карточек (от 2 до 6)</h2>
+				<div class="board" id="gameboard">
+					<form class="form">
+						<input
+							class="first_form_elem first_input"
+							type="number"
+							min="2"
+							max="6"
+							step="2"
+							placeholder="По горизонтали / вертикали"
+						/>
+						<button class="first_form_elem first_button">НАЧАТЬ</button>
+					</form>
+				</div>
+			</main>
+			<div class="confetti"></div>
+		</div>
+		<template id="gameTableTemplate">
+			<div class="table"></div>
+			<button class="restart">рестарт</button>
+		</template>
+		<template id="card_template">
+			<div class="card">
+				<i class="flipped-icon fa" id="flipped-icon"></i>
+				<i class="default-icon fa fa-quest-circle"></i>
+			</div>
+		</template>
+		<script type="module" src="index.js"></script>
+		<script
+			src="https://kit.fontawesome.com/927d2f3746.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
