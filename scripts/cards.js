@@ -48,6 +48,7 @@ function shuffArray(array) {
 }
 
 function duplicateElements(array) {
+	const newArr = []
 	array.forEach(item => {
 		newArr.push(item, item)
 	})
